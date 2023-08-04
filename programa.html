@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+    
+    var ano = 2023;
+
+    mostra("A idade de Joaozinho é ");
+    document.write(18 + 10);
+    pulaLinha();
+    mostra("Barney tem " + (ano - 1993) + " anos");
+    pulaLinha();
+
+    var idadeJoaozinho = 18;
+    var idadeMaria = 10;
+    var idadeLucas = 27;
+
+    var media = (idadeJoaozinho + idadeMaria + idadeLucas)/3;
+    mostra("A média das idades é ");
+    mostra(Math.round(media));
+    pulaLinha();
+
+</script>

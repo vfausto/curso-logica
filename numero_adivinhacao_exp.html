@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Digite o número pensado</button>
+
+<script>
+
+    var numeroRandomico = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+        if(input.value == numeroRandomico) {
+            alert("Parabéns, você acertou");
+        } else {
+            alert("Você errou!");
+        }
+
+        input.value = "";
+        input.focus();
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+    
+</script>
